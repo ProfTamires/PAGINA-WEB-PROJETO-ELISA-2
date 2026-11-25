@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Tech</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #ccb6b6;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+
+        main {
+            background-color: #FFFFFF;
+            color: #0e4e92;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center; /* Centraliza o conteúdo textual e elementos inline */
+            padding: 20px;
+        }
+
+
+        /* Estilização da imagem */
+        main img {
+            display: block;
+            margin: 0 auto 20px auto; /* Centraliza a imagem no meio da página */
+            border-radius: 15px;      /* Aplica as bordas arredondadas */
+            max-width: 100%;          /* Torna a imagem responsiva */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    </header>
+
+
+    <main>
+        <article>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoEcL2NS8MTNv4f55e6Xp2xYo_TCahx6i_hguYgBR1JQ&s=10" alt="tech">
+       
+        <div>
+         <h2>Meu primeiro post</h2>
+        <p>DO ZERO AO CÓDIGO — Aprender, construir e transformar.</p>
+       <p><em>CETI PROFESSORA ELISA SOUSA </em></p>
+        <p><em>Por: Nauana,Siane , Ana Livia e Joana.</em></p>
+    </main>
+
+
+    <button>❤️<span>0</span></button>
+    <button>👍<span>0</span></button>  
+        </div>  
+ 
+        </article>
+       
+        <main>
+        <article>
+           <img src="Robô Cibernético no Universo do Código.png">
+       
+        <div>
+         <h2> APRENDER • CRIAR • INOVAR </h2>
+        <p>O futuro começa com uma ideia!</p>
+        <p><em>Por: Nauana,Siane , Ana Livia e Jonana.</em></p>
+    </main>
+
+
+    <button>❤️<span>0</span></button>
+    <button>👍<span>0</span></button>  
+        </div>  
+ 
+        </article>
+       
+
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+
+        botoes.forEach(function(botao) {
+            botao.addEventListener("click", function() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                texto.textContent = Number(texto.textContent) + 1;
+            });
+        });
+    </script>
+</body>
+</html>
